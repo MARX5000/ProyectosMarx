@@ -14,21 +14,20 @@
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
     
     <!--
-<link rel="stylesheet" href="css/nativedroid2.css" />
+    <link rel="stylesheet" href="css/nativedroid2.css" />
     <link rel="stylesheet" href="css/nativedroid2.color.green.css" />
--->
+    -->
     
 	<script src="js/jquery-1.7.2.min.js"></script>
-	<script src="js/jquery.mobile-1.4.5.min.js"></script>
-    
-    <!--
-<script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
--->     
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>    
+
+    <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
      
+    <!--
     <script type="text/javascript" src="phonegap.js"></script>
+    -->
     
-    <script type="text/javascript" charset="ISO-8859-1" src="js/bd.js"></script>
-    
+    <script type="text/javascript" charset="ISO-8859-1" src="js/bd.js"></script>    
         
     <script src="live.js"></script> <!-- PARA ACTUALIZAR CACHE DEL EXPLORADOR Y CSS/JS -->
     
@@ -43,15 +42,29 @@
 </div>
 
 <div data-role="content">
-CONTENIDO:
+
+<form enctype="multipart/form-data" id="frmclientes">
+<label for="txtnombre">Nombre</label>
+<input type="text" size="50" id="txtnombre" />
+<label for="txtsexo">Sexo</label>
+<input type="text" size="1" id="txtsexo" />
+<label for="txtcorreo">Correo</label>
+<input type="text" size="100" id="txtcorreo" />
+</form>
+
 <a id="btninsertar" data-role="button" data-inline="true">Insertar</a>
 <a id="btnleer" data-role="button" data-inline="true">Leer</a>
-<a id="btnsalir" data-role="button" data-inline="true">quit</a>
-<a id="btnadios" data-role="button" data-inline="true">chaufita</a>
+
+<br />
+<span id="total"></span>
+<br /><br />
+<ul id="lsclientes" data-role="listview"></ul>
+
 </div>
 
-<div data-role="footer">
+<div data-role="footer" align="center">
 <h3>MVM</h3>
+<span id="estado"></span>
 </div>
 
 </div>
